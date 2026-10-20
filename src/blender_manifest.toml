@@ -1,0 +1,17 @@
+# Blender Extension Manifest (Blender 4.2+ extensions platform)
+
+schema_version = "1.0.0"
+
+id = "sidebar_tab_order"
+version = "1.0.0"
+name = "Sidebar Tab Order"
+tagline = "Put the 3D Viewport sidebar tabs in the order you choose"
+maintainer = "shintheweapon"
+type = "add-on"
+
+# Developed and tested with Blender 4.5
+blender_version_min = "4.5.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+tags = ["User Interface"]
