@@ -4,7 +4,7 @@ A Blender 4.5 extension that puts the tabs of the 3D Viewport sidebar (the N pan
 
 ## Use
 
-1. Install `dist\sidebar_tab_order-<version>.zip`: Edit > Preferences > Get Extensions > the menu at the top right > Install from Disk.
+1. Download `sidebar_tab_order-<version>.zip` from this repository's Releases page and install it: Edit > Preferences > Get Extensions > the menu at the top right > Install from Disk.
 2. In Edit > Preferences > Add-ons > Sidebar Tab Order, the list shows every sidebar tab.
 3. Select a tab and move it with the up and down buttons.
 4. Click **Apply**.
@@ -29,5 +29,7 @@ blender.exe --factory-startup -b -P tests/run_tests.py
 blender.exe --factory-startup -b --command extension validate src
 .\build.ps1
 ```
+
+`build.ps1` writes `dist\sidebar_tab_order-<version>.zip`. It needs the path to your blender.exe: pass it with `.\build.ps1 -Blender "<path to blender.exe>"`, or put it on the first line of `build.local.txt` next to `build.ps1` (git-ignored, so the path stays on your machine).
 
 `src\order.py` holds Blender's ordering rule and the plan in plain Python. `src\tabs.py` applies the plan to Blender's panels, and `src\prefs.py` holds the preferences, the list and its commands.
