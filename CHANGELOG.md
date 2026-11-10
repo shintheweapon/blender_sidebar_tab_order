@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 (unreleased)
+## 1.0.0
 
 ### Added
 - A list of the 3D Viewport sidebar tabs in the add-on's preferences, with up and down buttons, Refresh List and Apply.
